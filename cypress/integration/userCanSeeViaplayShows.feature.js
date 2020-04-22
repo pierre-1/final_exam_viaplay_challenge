@@ -4,7 +4,7 @@ describe("User can see Viaplay Shows", () => {
     cy.route({
       method: "GET",
       url: "https://content.viaplay.se/pc-se/serier/samtliga",
-      response: "",
+      response: "fixture:show_response",
     });
   });
   it("successfully", () => {
